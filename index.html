@@ -165,7 +165,13 @@
         .card.theme-press .card-body-content { background-color: #fffafb; }
         .card.theme-press .card-btn { background-color: #be123c; box-shadow: 0 4px 10px rgba(190, 18, 60, 0.3); }
 
-        /* 6. Resume Theme */
+        /* 6. Book Sticker Theme (New) */
+        .card.theme-sticker { border: 2px solid #b45309; }
+        .card.theme-sticker .card-header-title { background: linear-gradient(135deg, #b45309 0%, #f59e0b 100%); }
+        .card.theme-sticker .card-body-content { background-color: #fffbeb; }
+        .card.theme-sticker .card-btn { background-color: #b45309; box-shadow: 0 4px 10px rgba(180, 83, 9, 0.3); }
+
+        /* 7. Resume Theme */
         .card.theme-resume { border: 2px solid #0f766e; }
         .card.theme-resume .card-header-title { background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%); }
         .card.theme-resume .card-body-content { background-color: #f7fdfd; }
@@ -175,7 +181,7 @@
 .button-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* ఇక్కడ మార్చాము - దీనివల్ల బటన్ బార్డర్ లోపల కుడి అంచుకు పర్ఫెక్ట్‌గా లాక్ అవుతుంది */
+    justify-content: space-between; 
     gap: 15px;
     max-width: 1000px;
     margin: 60px auto 20px auto;
@@ -198,7 +204,6 @@
     font-size: 20px;
     font-weight: bold;
     color: #1e293b;
-    /* flex-grow: 1; ని ఇక్కడి నుండి పూర్తిగా తొలగించాము */
     text-align: left;
 }
 
@@ -217,7 +222,7 @@
     white-space: nowrap;
     background-color: #25D366;
     box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
-    flex-shrink: 0; /* బటన్ సైజు కుదించుకుపోకుండా నిరోధిస్తుంది */
+    flex-shrink: 0; 
 }
 
 .join-button:hover {
@@ -238,10 +243,10 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .button-container {
-        margin: 40px 15px 20px 15px; /* మొబైల్ స్క్రీన్‌లలో ఇరుక్కుపోకుండా మార్జిన్ */
+        margin: 40px 15px 20px 15px; 
     }
     .button-container span {
-        font-size: 16px; /* మొబైల్‌లో టెక్స్ట్ సైజ్ కొంచెం తగ్గించాము */
+        font-size: 16px; 
     }
     .join-button {
         padding: 10px 18px;
@@ -266,7 +271,7 @@
 
     <header>
         <h1>Fill & Print Portal</h1>
-        <p>సమాచారాన్ని సులభంగా నింపి, క్షణాల్లో ప్రింట్ చేసుకోండి</p>
+        <p>సмаచారాన్ని సులభంగా నింపి, క్షణాల్లో ప్రింట్ చేసుకోండి</p>
     </header>
 
     <div class="container">
@@ -321,6 +326,16 @@
                 <div class="card-body-content">
                     <div class="card-desc">సమావేశాలు, సంఘటనల వివరాలను అధికారికంగా పత్రికలకు విడుదల చేసే ప్రెస్ నోట్ ఫార్మాట్.</div>
                     <a href="https://fillandprint.github.io/press-note" class="card-btn">Create Press Note</a>
+                </div>
+            </div>
+
+            <div class="card theme-sticker">
+                <div class="card-header-title">
+                    <span>📚</span> Book Sticker Maker
+                </div>
+                <div class="card-body-content">
+                    <div class="card-desc">పాఠశాల పుస్తకాల కోసం విద్యార్థి ఫోటో మరియు కస్టమ్ క్యూఆర్ కోడ్‌తో కూడిన ప్రీమియం స్టిక్కర్లను తయారు చేసుకోండి.</div>
+                    <a href="https://fillandprint.github.io/book-sticker/" class="card-btn">Create Stickers</a>
                 </div>
             </div>
 
